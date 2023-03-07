@@ -20,8 +20,8 @@ const App = () => {
             key={index}
             className={`faq ${index === activeIndex ? "active" : ""}`}
           >
-            <h3 className="faq-title">{faq.title}</h3>
-            <p className="faq-text">{faq.text}</p>
+            <h3 className="faq-title">{faq.question}</h3>
+            <p className="faq-text">{faq.answer}</p>
             <button className="faq-toggle" onClick={() => handleToggle(index)}>
               {index === activeIndex ? (
                 <FontAwesomeIcon icon={faTimes} />
